@@ -7,13 +7,13 @@ import productdetail from '../Components/productdetail.js'
 
 const SearchStackNavigator = createStackNavigator({
 
-  Home: { /* Ici j'ai appelé la vue "Home" mais on peut mettre ce que l'on veut. 
-    C'est le nom qu'on util isera pour appeler cette vue*/
-      screen:Home,
-      navigationOptions: {
-        title: 'Protfitness'
-      }
-    },
+  Home: { /* Ici j'ai appelé la vue "Search" mais on peut mettre ce que l'on veut. 
+  C'est le nom qu'on util isera pour appeler cette vue*/
+    screen:Home,
+    navigationOptions: {
+      title: 'Home'
+    }
+  },
 
     Search: { /* Ici j'ai appelé la vue "Search" mais on peut mettre ce que l'on veut. 
     C'est le nom qu'on util isera pour appeler cette vue*/

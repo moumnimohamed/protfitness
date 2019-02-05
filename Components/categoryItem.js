@@ -2,7 +2,7 @@ import React from 'React'
 import { StyleSheet ,View,Image, Text,TouchableOpacity  } from 'react-native'
 
 
-class categoryItem extends React.Component {
+class CategoryItem extends React.Component {
 
 
 
@@ -10,13 +10,13 @@ class categoryItem extends React.Component {
 
 render (){
 
-    const cat = this.props.category
-
-
+    
+     
+    const catt = this.props.category
     return (
         
         <TouchableOpacity style={styles.main_container}>
-              <text>cat.name</text>
+              <Text>{catt.id}</Text>
         </TouchableOpacity>
     )
 
@@ -32,3 +32,5 @@ const styles = StyleSheet.create({
     }
 })
   
+
+export default CategoryItem
