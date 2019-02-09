@@ -24,10 +24,11 @@ return fetch(url)
 
 /* function that return all categories by parent */
 
-export function GetAllCtegoriesByParent(parent,page) {
- const url = 'https://www.protfitness.com/wp-json/wc/v3/products/categories?parent='+parent+'&page='+page+'&consumer_key='+client_key+'&consumer_secret='+client_secret
- console.log('the url is : '+url)
+export function GetAllCtegoriesByParent (parent,p) {
+ const url ='https://www.protfitness.com/wp-json/wc/v3/products/categories?parent='+parent+'&page='+p+'&consumer_key='+client_key+'&consumer_secret='+client_secret
  return fetch(url)
- .then((response)=>response.json())
- .catch((error)=>console.error(error))
+ .then ((response) => response.json())
+ .catch ((error) => console.error(error))
 }
+
+ 

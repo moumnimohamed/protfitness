@@ -1,7 +1,7 @@
 // Components/Home.js
 import React from 'react'
-import CategoryItem from './categoryItem'
-import GetAllCtegoriesByParent from '../api/woocomerceDATA'
+import CategoryItem from './CategoryItem'
+import { GetAllCtegoriesByParent} from '../api/woocomerceDATA'
 
 
 import {ActivityIndicator, StyleSheet, View, TextInput, Button, Text, FlatList} from 'react-native'
@@ -10,38 +10,38 @@ import {ActivityIndicator, StyleSheet, View, TextInput, Button, Text, FlatList} 
 class Home extends React.Component {
   
 /*on appel cette function quand le render est fait */
-_getcata() {
-    GetAllCtegoriesByParent (0,1).then(Data => {
-          this.setState({
-            categories: Data,
-      })
-  })
+ 
+/*on appel cette function quand le render est fait */
+componentDidMount() {
+  GetAllCtegoriesByParent (0,1).then(Data => {
+    this.setState({
+      categories: Data,
+})
+})
     }
+
+
+    
 
     /*co,structor */
 constructor(props) {
     super(props)
     this.state = {
-     categories: [],
-    
+     categories: []
    }
  }
 
  
     render () {
         return (
-        <View>
-             <Button style={{ height: 50 }} title='cata' onPress={() => this._getcata()}/>
             <FlatList
- 
  data={this.state.categories}
  keyExtractor={(item) => item.id.toString()}
 renderItem={({item}) => <CategoryItem category={item} />}
 />
-</View>
     )
     }
-
-
 }
+
+
 export default Home

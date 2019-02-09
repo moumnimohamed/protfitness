@@ -41,10 +41,10 @@ const styles = StyleSheet.create({
      flexDirection: 'row'
   },
   image: {
-   width: 120,
-   height: 180,
-   margin: 5,
-   backgroundColor: '#000'
+    width: 120,
+    height: 180,
+    margin: 5,
+    backgroundColor: '#000'
  },
  content_container: {
     flex: 1,

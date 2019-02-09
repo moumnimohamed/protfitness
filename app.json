@@ -2,7 +2,7 @@
   "expo": {
     "name": "protfitness_master",
     "description": "This project is really great.",
-    "slug": "Giblo",
+    "slug": "protfitness_master",
     "privacy": "public",
     "sdkVersion": "30.0.0",
     "platforms": ["ios", "android"],

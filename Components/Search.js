@@ -47,7 +47,7 @@ _searchproducts() {
         this._loadproducts()
     })
   }
-  /*fanction charger de affichier detail de milm selection (film item) */
+  /*fanction charger de affichier detail de produit selection (film item) */
   _displayDetailForproduct = (idProduct) => { 
     console.log("Display product with id " + idProduct)
               this.props.navigation.navigate("productdetail",{idProduct : idProduct})
